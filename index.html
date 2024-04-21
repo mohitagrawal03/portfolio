@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit Agrawal - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://kit.fontawesome.com/b04efdb9c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav id="desktop-nav">
+        <div class="logo">Mohit Agrawal</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#nd">Nd</a></li>
+                <li><a href="#porjects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Mohit Agrawal</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#nd" onclick="toggleMenu()">Nd</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <!-- PROFILE -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Mohit Agrawal profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Mohit Agrawal</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume - mohit agrawal.pdf')">Download Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin-logo.png" alt="linkedin profile" class="icon" onclick="location.href='https://linkedin.com/in/mohitdagrawal'">
+                <img src="./assets/github-logo.png" alt="Github profile" class="icon" onclick="location.href='https://github.com/mohitagrawal21'">
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assets/about-pic4.jpg" alt="Mohit's picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Energetic Frontend Developer and ambitious 3rd-year Electronics Engineering Honors student with a passion for AI in Edge Computing. Known for dynamic leadership, creative problem-solving, and dedication. Proficient in OOPs, Frontend Development, Python, C, Arduino, and VLSI. Ready to elevate your team as a Full Stack Developer with proven time-management and decision-making skills. Let's build something extraordinary together!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('internships')">Internships</p>
+                        <p class="tab-links" onclick="opentab('eductaion')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript</li>
+                            <li><span>Electronics</span><br>Arduino, CMOS DCD, Verilog</li>
+                            <li><span>Soft skills</span><br>Problem-solving, Leadership, Time-management</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="internships">
+                        <ul>
+                            <li><span>Sept - Nov 2023</span><br>AWS AI-ML Virtual Internship</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="eductaion">
+                        <ul>
+                            <li><span>2021 - 2025</span><br>B. Tech. in Electronics Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PORTFOLIO -->
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./assets/about-pic1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum at rerum beatae natus voluptas necessitatibus totam fugiat unde? Asperiores iusto et fuga architecto neque vitae vel porro ab sit delectus?</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/about-pic2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum at rerum beatae natus voluptas necessitatibus totam fugiat unde? Asperiores iusto et fuga architecto neque vitae vel porro ab sit delectus?</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> mohitdagrawal1@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 9767992080</p>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="conformation"></span> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Copy Rights -->
+    <section id="copyright">
+        <p>copyright &copy; Mohit. Made with <i class="fa-solid fa-heart"></i> & passion. </p>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

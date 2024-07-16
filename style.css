@@ -262,6 +262,7 @@ section {
 
 #about{
     padding: 80px 0;
+    padding-bottom: 90vh;
 }
 
 .row {
@@ -282,6 +283,10 @@ section {
 
 .about-col-2 {
     flex-basis: 60%;
+}
+
+.about-col-2 p {
+    text-align: justify; /* Justify paragraph text */
 }
 
 .sub-title {
@@ -336,17 +341,115 @@ section {
 }
 
 /* Portfolio */
-
+/* 
 #portfolio {
     padding: 50px 0;
 }
-.container{
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.work-list {
+
+.portfolio-sub-title {
+    margin-bottom: 7vh;
+}
+
+.video-text-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 10vh;
+}
+
+.video-text-container.reverse {
+    flex-direction: row-reverse;
+}
+
+.video-container {
+    border: 2px solid #000;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 710px;
+    height: 399px;
+}
+
+.video-container iframe {
+    border-radius: 15px;
+    width: 710px;
+    height: 399px;
+}
+
+.text-container {
+    max-width: 300px;
+    margin: 0 20px;
+}
+
+.text-container .sub-title {
+    margin-bottom: 10px;
+} */
+
+#portfolio {
+    padding: 50px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portfolio-sub-title {
+    margin-bottom: 7vh;
+}
+
+.video-text-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    width: 100%; /* Full width on smaller screens */
+    max-width: 800px; /* Limit width on larger screens */
+    margin-bottom: 10vh;
+}
+
+.video-text-container.reverse {
+    flex-direction: column-reverse; /* Reverse stacking order on smaller screens */
+}
+
+.video-container {
+    border: 2px solid #000;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%; /* Full width on smaller screens */
+    max-width: 710px; /* Limit width on larger screens */
+    height: auto; /* Auto height based on content */
+    max-height: 399px;
+}
+
+.video-container iframe {
+    border-radius: 15px;
+    width: 100%; /* Full width */
+    height: 399px; /* Fixed height for consistency */
+}
+
+.text-container {
+    max-width: 100%; /* Full width on smaller screens */
+    margin: 20px 0; /* Adjust margins for spacing */
+    text-align: center; /* Center align text on smaller screens */
+}
+
+.text-container h2, .text-container h3, .text-container p {
+    margin: 10px 0; /* Adjust margins for spacing */
+}
+
+
+
+/* .work-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 50px;
@@ -414,7 +517,7 @@ section {
 
 .work:hover .layer {
     height: 100%;
-}
+} */
 
 /* Contact */
 

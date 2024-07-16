@@ -1,8 +1,167 @@
+@media screen and (max-width: 1300px) {
+    .about-col-1 {
+        display: none; /* Hide column with the image */
+    }
+
+    .about-col-2 {
+        flex-basis: 100%; /* Full width on smaller screens */
+    }
+
+    #about{
+        padding-bottom: 0;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     #desktop-nav {
         display: none;
     }
+
     #hamburger-nav {
         display: flex;
     }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    section {
+        margin: 0 5rem;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .sub-title {
+        font-size: 36px;
+    }
+
+    .tab-links {
+        font-size: 14px;
+    }
+
+    /* Contact */
+
+#contact {
+    padding: 10vh 0; /* Adjust padding for responsiveness */
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 15px; /* Add padding to container */
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensure items are evenly spaced */
+}
+
+.contact-left {
+    flex-basis: 100%; /* Full width on small screens */
+    margin-bottom: 20px; /* Add space between left and right sections */
+}
+
+.contact-right {
+    flex-basis: 100%; /* Full width on small screens */
+}
+
+.contact-left p {
+    margin-top: 15px;
+}
+
+.contact-left p i {
+    color: #fa9f42;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.btn2 {
+    display: block; /* Ensure button takes full width on small screens */
+    width: 100%;
+    max-width: 15vh;
+    background-color: #fa9f42;
+    border-radius: 10px;
+    padding: 14px 0; /* Adjust padding for smaller screens */
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #ffce9e;
+    padding: 12px;
+    margin: 10px 0; /* Adjust margins for smaller screens */
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+}
+
+
+@media screen and (max-width: 768px) {
+    section {
+        margin: 0 1rem;
+        height: auto;
+        padding-top: 2rem;
+    }
+
+    #profile {
+        flex-direction: column;
+        gap: 2rem;
+        height: auto;
+    }
+
+    .section__pic-container {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto; /* Center horizontally */
+        display: flex;
+        justify-content: center; /* Adjust horizontal alignment */
+    }
+
+    .section__text {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .section__text__p2 {
+        font-size: 1.5rem;
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%; /* Stack columns vertically */
+        /* text-align: center; */
+    }
+
+    .tab-links {
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
 }
